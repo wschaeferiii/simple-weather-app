@@ -27,7 +27,6 @@ export function geolocationApi() {
         if ('geolocation' in navigator) {
             
             navigator.geolocation.getCurrentPosition((position) => {
-                console.log('position', position)
                 resolve(position);
             });
             
